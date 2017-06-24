@@ -11,8 +11,10 @@ Automatically seek for changes on your files in your current directory recursive
  - Python2.7
  - GNU/Linux OS x64
 
-## Quick-Start
+## Installation
 ```
+git clone https://github.com/m4n3dw0lf/selenium-watchdog
+cd selenium-watchdog
 pip install selenium watchdog
 wget https://github.com/mozilla/geckodriver/releases/download/v0.13.0/geckodriver-v0.13.0-linux64.tar.gz
 tar -xvzf geckodriver*
