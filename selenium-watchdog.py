@@ -43,7 +43,9 @@ author = "Angelo Moura(m4n3dw0lf)"
 
 class Selenium(FileSystemEventHandler):
 	def on_modified(self, event):
-		driver.refresh()
+		files = [".html",".ejs",".css",".js"]
+		if ".swp" not in str(event) and any(x in str(event) for x in files):
+				driver.refresh()
 
 class WatchDog(object):
 	def __init__(self):
