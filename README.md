@@ -16,19 +16,22 @@ Automatically seek for changes on your files in your current directory recursive
 pip install selenium watchdog
 wget https://github.com/mozilla/geckodriver/releases/download/v0.13.0/geckodriver-v0.13.0-linux64.tar.gz
 tar -xvzf geckodriver*
+#or any other directory inside your $PATH variable
 sudo cp geckodriver /usr/local/bin
+chmod +x selenium-watchdog.py
+#or any other directory inside your $PATH variable
 sudo cp selenium-watchdog.py /usr/local/bin
 ```
 
 ## Usage
  - Navigate to your project folder
- - Start your web-server with your project
+ - Start to listen in a web-server
  - Run:
 ```
-python selenium-watchdog.py <YOUR PROJECT URL>
+selenium-watchdog.py <YOUR PROJECT URL>
 ```
 
 ## Example
 ```
-python selenium-watchdog.py http://localhost:1337
+selenium-watchdog.py http://localhost:1337
 ```
