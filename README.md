@@ -22,18 +22,18 @@ tar -xvzf geckodriver*
 sudo cp geckodriver /usr/local/bin
 chmod +x selenium-watchdog.py
 #or any other directory inside your $PATH variable
-sudo cp selenium-watchdog.py /usr/local/bin
+sudo cp selenium-watchdog.py /usr/local/bin/selenium-watchdog
 ```
 
 ## Usage
- - Navigate to your project folder
- - Start to listen in a web-server
+ - Navigate to the project folder that you want to monitor file changes
+ - Start to listen your web-server
  - Run:
 ```
-selenium-watchdog.py <YOUR PROJECT URL>
+selenium-watchdog <YOUR PROJECT URL>
 ```
 
 ## Example
 ```
-selenium-watchdog.py http://localhost:1337
+selenium-watchdog http://localhost:1337
 ```
